@@ -1,78 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Boxes</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <div class="box" id="box1">
-      <div class="box-header">Top Box</div>
-      <div class="options">
-        <div class="option-section color-section">
-          <h4>Color Options</h4>
-          <select>
-            <option>Red</option>
-            <option>Green</option>
-            <option>Blue</option>
-          </select>
+    <h1>YAY! It’s BOGO</h1>
+
+    <div class="offer-card">
+      <div class="offer-header">
+        <span class="unit">1 Unit</span>
+        <span class="discount">10% Off</span>
+      </div>
+      <div class="price-section">
+        <span class="price">$10.00 USD</span>
+        <span class="strikethrough">$24.00 USD</span>
+      </div>
+      <div class="tag">Standard Price</div>
+    </div>
+
+    <div class="offer-card popular">
+      <div class="offer-header">
+        <span class="unit">2 Unit</span>
+        <span class="discount">20% Off</span>
+        <div class="badge">Most Popular</div>
+      </div>
+      <div class="unit-options">
+        <div class="row">
+          <label>#1</label>
+          <select><option>Size</option><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Color</option><option>Black</option><option>White</option></select>
         </div>
-        <div class="option-section size-section">
-          <h4>Size Options</h4>
-          <select>
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-          </select>
+        <div class="row">
+          <label>#2</label>
+          <select><option>Size</option><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Color</option><option>Black</option><option>White</option></select>
         </div>
+      </div>
+      <div class="price-section">
+        <span class="price">$18.00 USD</span>
+        <span class="strikethrough">$24.00 USD</span>
       </div>
     </div>
 
-    <div class="box" id="box2">
-      <div class="box-header">Middle Box</div>
-      <div class="options">
-        <div class="option-section color-section">
-          <h4>Color Options</h4>
-          <select>
-            <option>Pink</option>
-            <option>Purple</option>
-            <option>Lavender</option>
-          </select>
-        </div>
-        <div class="option-section size-section">
-          <h4>Size Options</h4>
-          <select>
-            <option>XS</option>
-            <option>S</option>
-            <option>M</option>
-          </select>
-        </div>
+    <div class="offer-card">
+      <div class="offer-header">
+        <span class="unit">3 Unit</span>
+        <span class="discount">30% Off</span>
+      </div>
+      <div class="price-section">
+        <span class="price">$24.00 USD</span>
+        <span class="strikethrough">$36.00 USD</span>
       </div>
     </div>
 
-    <div class="box" id="box3">
-      <div class="box-header">Bottom Box</div>
-      <div class="options">
-        <div class="option-section color-section">
-          <h4>Color Options</h4>
-          <select>
-            <option>Orange</option>
-            <option>Yellow</option>
-            <option>Gold</option>
-          </select>
-        </div>
-        <div class="option-section size-section">
-          <h4>Size Options</h4>
-          <select>
-            <option>L</option>
-            <option>XL</option>
-            <option>XXL</option>
-          </select>
-        </div>
-      </div>
+    <div class="footer">
+      <p>Free Delivery</p>
+      <p><strong>Total: $18.00 USD</strong></p>
     </div>
+
+    <button class="cart-btn">+ Add to Cart</button>
   </div>
 
   <script src="script.js"></script>
