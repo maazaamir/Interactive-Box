@@ -26,6 +26,12 @@ h1 {
   margin-bottom: 16px;
   border-radius: 8px;
   position: relative;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.offer-card:hover {
+  transform: scale(1.01);
 }
 
 .offer-card.popular {
@@ -87,6 +93,7 @@ h1 {
   display: flex;
   gap: 10px;
   margin: 8px 0;
+  align-items: center;
 }
 
 .unit-options select {
